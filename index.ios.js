@@ -171,7 +171,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#002b36',
   },
   coin: {
-    fontSize: 50,
+    fontSize: 45,
     textAlign: 'center',
     margin: 10,
     color: '#468847',
