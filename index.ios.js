@@ -6,6 +6,7 @@ import React, {
   TextInput,
   View,
   TouchableHighlight,
+  TouchableWithoutFeedback,
   ActivityIndicatorIOS,
   AsyncStorage,
 } from 'react-native';
@@ -148,7 +149,7 @@ class BitminterNative extends Component {
 
     const user = this.state.user;
     return (
-      <TouchableHighlight style={styles.container} onPress={this.fetchData}>
+      <TouchableWithoutFeedback style={styles.container} onPress={this.fetchData}>
         <View style={styles.container}>
           <Text style={styles.coin}>
             {user.balances.BTC}
@@ -158,7 +159,7 @@ class BitminterNative extends Component {
             {this.formatHashRate(user.hash_rate)} ghps
           </Text>
         </View>
-      </TouchableHighlight>
+      </TouchableWithoutFeedback>
     );
   }
 }
