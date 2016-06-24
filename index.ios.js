@@ -1,13 +1,14 @@
-import React, {
+import React, { Component } from 'react';
+
+import {
   AppRegistry,
-  Component,
   StyleSheet,
   Text,
   TextInput,
   View,
   TouchableHighlight,
   TouchableWithoutFeedback,
-  ActivityIndicatorIOS,
+  ActivityIndicator,
   AsyncStorage,
 } from 'react-native';
 
@@ -47,7 +48,7 @@ class BitminterNative extends Component {
         console.log('No key');
       }
     } catch (error) {
-      console.log(`AsyncStorage error: ${error.mesage}`);
+      console.log(`AsyncStorage error: ${error.message}`);
     }
   }
 
@@ -124,7 +125,7 @@ class BitminterNative extends Component {
   renderLoadingView() {
     return (
       <View style={styles.container}>
-        <ActivityIndicatorIOS
+        <ActivityIndicator
           animating={true}
           color='#eee8d5'
           size='large'

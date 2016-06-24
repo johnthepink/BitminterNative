@@ -48,7 +48,7 @@ class BitminterNative extends Component {
         console.log('No key');
       }
     } catch (error) {
-      console.log(`AsyncStorage error: ${error.mesage}`);
+      console.log(`AsyncStorage error: ${error.message}`);
     }
   }
 
